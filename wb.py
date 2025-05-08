@@ -75,10 +75,10 @@ Marital_status = map[Marital_status]
 
 # 数据读取，特征标注
 #%%load model
-xgb_model = joblib.load(r'D:\厦门大学\合作\刘荣强\胆囊癌SEER\xgb_model.pkl')
+xgb_model = joblib.load('xgb_model.pkl')
 
 #%%load data
-hp_train = pd.read_excel(r"D:\厦门大学\合作\刘荣强\胆囊癌SEER\data.xlsx", sheet_name="Sheet1")
+hp_train = pd.read_excel("data.xlsx", sheet_name="Sheet1")
 features = ["T","Age","N","Median_household_income_inflation_adj_to_2021","Rural_Urban_Continuum_Code",
             "Grade_Recode","Marital_status"]
 
