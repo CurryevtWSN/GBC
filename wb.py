@@ -9,7 +9,7 @@ import sklearn
 import joblib
 from xgboost.sklearn import XGBClassifier
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-
+import openpyxl
 
 #%%不提示warning信息
 st.set_option('deprecation.showPyplotGlobalUse', False)
